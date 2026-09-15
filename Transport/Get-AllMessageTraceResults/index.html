@@ -14,7 +14,7 @@
         <link rel="prev" href="../Compute-TopExoRecipientsFromMessageTrace/">
       
       
-        <link rel="next" href="../ReplayQueueDatabases/">
+        <link rel="next" href="../Get-TerrlExternalRecipientEstimate/">
       
       
         
@@ -4472,8 +4472,6 @@
       
         
       
-        
-      
     
     
     
@@ -4537,106 +4535,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../Security/CVE-2023-23397/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CVE-2023-23397
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_13_2" id="__nav_13_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    CVE-2023-23397
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Security/CVE-2023-23397/FAQ/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5260,6 +5158,8 @@
       
         
       
+        
+      
     
     
     
@@ -5431,6 +5331,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Get-TerrlExternalRecipientEstimate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get-TerrlExternalRecipientEstimate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -5618,10 +5546,10 @@
 <div class="highlight"><pre><span></span><code><span class="nv">$messages</span> <span class="p">=</span> <span class="p">.\</span><span class="nb">Get-AllMessageTraceResults</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-StartDate</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">).</span><span class="n">AddHours</span><span class="p">(-</span><span class="n">7</span><span class="p">)</span> <span class="n">-EndDate</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">)</span>
 </code></pre></div>
 <p>Filter by sender and status:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$messages</span> <span class="p">=</span> <span class="p">.\</span><span class="nb">Get-AllMessageTraceResults</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-StartDate</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">).</span><span class="n">AddHours</span><span class="p">(-</span><span class="n">7</span><span class="p">)</span> <span class="n">-EndDate</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">)</span> <span class="n">-SenderAddress</span> <span class="s2">&quot;john@contoso.com&quot;</span> <span class="n">-Status</span> <span class="s2">&quot;Delivered&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$messages</span> <span class="p">=</span> <span class="p">.\</span><span class="nb">Get-AllMessageTraceResults</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-StartDate</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">).</span><span class="n">AddHours</span><span class="p">(-</span><span class="n">7</span><span class="p">)</span> <span class="n">-EndDate</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">)</span> <span class="n">-SenderAddress</span> <span class="s2">"john@contoso.com"</span> <span class="n">-Status</span> <span class="s2">"Delivered"</span>
 </code></pre></div>
 <p>Filter by recipient with a custom page size:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$messages</span> <span class="p">=</span> <span class="p">.\</span><span class="nb">Get-AllMessageTraceResults</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-StartDate</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">).</span><span class="n">AddDays</span><span class="p">(-</span><span class="n">2</span><span class="p">)</span> <span class="n">-EndDate</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">)</span> <span class="n">-RecipientAddress</span> <span class="s2">&quot;jane@contoso.com&quot;</span> <span class="n">-PageSize</span> <span class="n">1000</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$messages</span> <span class="p">=</span> <span class="p">.\</span><span class="nb">Get-AllMessageTraceResults</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-StartDate</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">).</span><span class="n">AddDays</span><span class="p">(-</span><span class="n">2</span><span class="p">)</span> <span class="n">-EndDate</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">)</span> <span class="n">-RecipientAddress</span> <span class="s2">"jane@contoso.com"</span> <span class="n">-PageSize</span> <span class="n">1000</span>
 </code></pre></div>
 <h2 id="output">Output</h2>
 <p>Returns an array of message trace objects from <code>Get-MessageTraceV2</code>. The total number of retrieved messages is displayed upon completion.</p>

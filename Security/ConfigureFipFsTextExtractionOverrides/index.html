@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://microsoft.github.io/CSS-Exchange/Security/ConfigureFipFsTextExtractionOverrides/">
       
       
-        <link rel="prev" href="../CVE-2023-23397/FAQ/">
+        <link rel="prev" href="../CVE-2023-21709/">
       
       
         <link rel="next" href="../EOMT/">
@@ -4474,8 +4474,6 @@
       
         
       
-        
-      
     
     
     
@@ -4539,106 +4537,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../CVE-2023-23397/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CVE-2023-23397
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_13_2" id="__nav_13_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    CVE-2023-23397
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../CVE-2023-23397/FAQ/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5357,6 +5255,8 @@
       
         
       
+        
+      
     
     
     
@@ -5440,6 +5340,34 @@
     
   
     Get-AllMessageTraceResults
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transport/Get-TerrlExternalRecipientEstimate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get-TerrlExternalRecipientEstimate
   
 
     
@@ -5644,16 +5572,16 @@
 <h2 id="how-to-run">How To Run</h2>
 <h3 id="examples">Examples:</h3>
 <p>This syntax enables processing of <code>Jpeg</code> and <code>AutoCad</code> file types by the help of the <code>OutsideInModule</code> on the server where the command was executed.</p>
-<div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">ConfigureFipFsTextExtractionOverrides</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ConfigureOverride</span> <span class="s2">&quot;Jpeg&quot;</span><span class="p">,</span> <span class="s2">&quot;AutoCad&quot;</span> <span class="n">-Action</span> <span class="s2">&quot;Allow&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">ConfigureFipFsTextExtractionOverrides</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ConfigureOverride</span> <span class="s2">"Jpeg"</span><span class="p">,</span> <span class="s2">"AutoCad"</span> <span class="n">-Action</span> <span class="s2">"Allow"</span>
 </code></pre></div>
 <p>This syntax disables processing of <code>Jpeg</code> and <code>AutoCad</code> file types by the help of the <code>OutsideInModule</code> on the server <code>ExchangeSrv01</code> and <code>ExchangeSrv02</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">ConfigureFipFsTextExtractionOverrides</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ExchangeServerNames</span> <span class="n">ExchangeSrv01</span><span class="p">,</span> <span class="n">ExchangeSrv02</span> <span class="n">-ConfigureOverride</span> <span class="s2">&quot;Jpeg&quot;</span><span class="p">,</span> <span class="s2">&quot;AutoCad&quot;</span> <span class="n">-Action</span> <span class="s2">&quot;Block&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">ConfigureFipFsTextExtractionOverrides</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ExchangeServerNames</span> <span class="n">ExchangeSrv01</span><span class="p">,</span> <span class="n">ExchangeSrv02</span> <span class="n">-ConfigureOverride</span> <span class="s2">"Jpeg"</span><span class="p">,</span> <span class="s2">"AutoCad"</span> <span class="n">-Action</span> <span class="s2">"Block"</span>
 </code></pre></div>
 <p>This syntax causes Exchange Server to use the previous version of the <code>OutsideInModule</code>. The override will be enabled on the system on which the script was executed. Note that this can make your system vulnerable to known vulnerabilities in the previous version and should not be used unless explicitly advised by Microsoft.</p>
-<div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">ConfigureFipFsTextExtractionOverrides</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ConfigureOverride</span> <span class="s2">&quot;OutsideInModule&quot;</span> <span class="n">-Action</span> <span class="s2">&quot;Allow&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">ConfigureFipFsTextExtractionOverrides</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ConfigureOverride</span> <span class="s2">"OutsideInModule"</span> <span class="n">-Action</span> <span class="s2">"Allow"</span>
 </code></pre></div>
 <p>This syntax disables the override of the version of the <code>OutsideInModule</code> module on the server <code>ExchangeSrv01</code> and <code>ExchangeSrv02</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">ConfigureFipFsTextExtractionOverrides</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ExchangeServerNames</span> <span class="n">ExchangeSrv01</span><span class="p">,</span> <span class="n">ExchangeSrv02</span> <span class="n">-ConfigureOverride</span> <span class="s2">&quot;OutsideInModule&quot;</span> <span class="n">-Action</span> <span class="s2">&quot;Block&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">ConfigureFipFsTextExtractionOverrides</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ExchangeServerNames</span> <span class="n">ExchangeSrv01</span><span class="p">,</span> <span class="n">ExchangeSrv02</span> <span class="n">-ConfigureOverride</span> <span class="s2">"OutsideInModule"</span> <span class="n">-Action</span> <span class="s2">"Block"</span>
 </code></pre></div>
 <p>This syntax restores the <code>configuration.xml</code> from the backup that was created by a previous run of the script on the Exchange server where the script was executed.</p>
 <div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">ConfigureFipFsTextExtractionOverrides</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-Rollback</span>

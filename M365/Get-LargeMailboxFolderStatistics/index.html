@@ -4549,8 +4549,6 @@
       
         
       
-        
-      
     
     
     
@@ -4614,106 +4612,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../Security/CVE-2023-23397/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CVE-2023-23397
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_13_2" id="__nav_13_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    CVE-2023-23397
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Security/CVE-2023-23397/FAQ/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5335,6 +5233,8 @@
       
         
       
+        
+      
     
     
     
@@ -5418,6 +5318,34 @@
     
   
     Get-AllMessageTraceResults
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transport/Get-TerrlExternalRecipientEstimate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get-TerrlExternalRecipientEstimate
   
 
     
@@ -5586,7 +5514,7 @@ Although it can work with both Primary and Archive mailboxes.</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$folderStats</span> <span class="p">=</span> <span class="p">.\</span><span class="nb">Get-LargeMailboxFolderStatistics</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-Identity</span> <span class="n">fred</span><span class="nv">@contoso</span><span class="p">.</span><span class="n">com</span> <span class="n">-MailboxType</span> <span class="n">Primary</span>
 </code></pre></div></p>
 <p>Example to get the mailbox folder statistics for a Archive mailbox, in batches of 5000 and just the folder properties Name and FolderPath
-<div class="highlight"><pre><span></span><code><span class="nv">$folderStats</span> <span class="p">=</span> <span class="p">.\</span><span class="nb">Get-LargeMailboxFolderStatistics</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-Identity</span> <span class="n">fred</span><span class="nv">@contoso</span><span class="p">.</span><span class="n">com</span> <span class="n">-MailboxType</span> <span class="n">Archive</span> <span class="n">-BatchSize</span> <span class="n">5000</span> <span class="n">-Properties</span> <span class="p">@(</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="s2">&quot;FolderPath&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$folderStats</span> <span class="p">=</span> <span class="p">.\</span><span class="nb">Get-LargeMailboxFolderStatistics</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-Identity</span> <span class="n">fred</span><span class="nv">@contoso</span><span class="p">.</span><span class="n">com</span> <span class="n">-MailboxType</span> <span class="n">Archive</span> <span class="n">-BatchSize</span> <span class="n">5000</span> <span class="n">-Properties</span> <span class="p">@(</span><span class="s2">"Name"</span><span class="p">,</span> <span class="s2">"FolderPath"</span><span class="p">)</span>
 </code></pre></div></p>
 <h5 id="further-information">Further information <br></h5>
 <p>The sweet spot seems to be retrieving folders in batches of about 5000 at a time. This prevents cmdlet timeouts but also achieves a good overall run time.</p>

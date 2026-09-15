@@ -4543,8 +4543,6 @@
       
         
       
-        
-      
     
     
     
@@ -4608,106 +4606,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../Security/CVE-2023-23397/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CVE-2023-23397
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_13_2" id="__nav_13_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    CVE-2023-23397
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Security/CVE-2023-23397/FAQ/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5329,6 +5227,8 @@
       
         
       
+        
+      
     
     
     
@@ -5412,6 +5312,34 @@
     
   
     Get-AllMessageTraceResults
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transport/Get-TerrlExternalRecipientEstimate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get-TerrlExternalRecipientEstimate
   
 
     
@@ -5573,13 +5501,13 @@
 </code></pre></div>
 <h2 id="examples">Examples</h2>
 <p>The following example collects logs for two mailbox every hour:</p>
-<div class="highlight"><pre><span></span><code>.\Get-EASMailboxLogs.ps1 -mailbox @(&quot;jim&quot;,&quot;zeke&quot;) -OutputPath C:\EASLogs -interval 60
+<div class="highlight"><pre><span></span><code>.\Get-EASMailboxLogs.ps1 -mailbox @("jim","zeke") -OutputPath C:\EASLogs -interval 60
 </code></pre></div>
 <p>The following example collects logs for a mailbox:
-<div class="highlight"><pre><span></span><code>.\Get-EASMailboxLogs.ps1 -Mailbox &quot;jim&quot; -OutputPath c:\EASLogs
+<div class="highlight"><pre><span></span><code>.\Get-EASMailboxLogs.ps1 -Mailbox "jim" -OutputPath c:\EASLogs
 </code></pre></div></p>
 <p>The following example enables Verbose Logging on the current on premise server and collects logs for a mailbox:
-<div class="highlight"><pre><span></span><code>.\Get-EASMailboxLogs.ps1 -Mailbox &quot;jim&quot; -OutputPath c:\EASLogs -EnableMailboxLoggingVerboseMode $true
+<div class="highlight"><pre><span></span><code>.\Get-EASMailboxLogs.ps1 -Mailbox "jim" -OutputPath c:\EASLogs -EnableMailboxLoggingVerboseMode $true
 </code></pre></div></p>
 
 

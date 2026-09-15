@@ -4474,8 +4474,6 @@
       
         
       
-        
-      
     
     
     
@@ -4539,106 +4537,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../CVE-2023-23397/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CVE-2023-23397
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_13_2" id="__nav_13_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    CVE-2023-23397
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../CVE-2023-23397/FAQ/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5357,6 +5255,8 @@
       
         
       
+        
+      
     
     
     
@@ -5440,6 +5340,34 @@
     
   
     Get-AllMessageTraceResults
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transport/Get-TerrlExternalRecipientEstimate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get-TerrlExternalRecipientEstimate
   
 
     
@@ -5650,16 +5578,16 @@ servers being enabled.</p>
 </code></pre></div>
 <p>This syntax collects the possible IP addresses to be used for the IP restriction for a virtual directory. Plus the location to store the file.</p>
 <p><strong>NOTE:</strong> This is only to assist you with the IP collections. You must verify the list to make sure it is accurate and contains all the required IP addresses.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-FindExchangeServerIPAddresses</span> <span class="n">-OutputFilePath</span> <span class="s2">&quot;C:\temp\ExchangeIPs.txt&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-FindExchangeServerIPAddresses</span> <span class="n">-OutputFilePath</span> <span class="s2">"C:\temp\ExchangeIPs.txt"</span>
 </code></pre></div>
 <p>This syntax will enable Extended Protection for all virtual directories and set EWS Backend virtual directory to None and then proceed to set IP restriction for the EWS Backend virtual directory for all servers online, while providing the IP address list.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-RestrictType</span> <span class="s2">&quot;EWSBackend&quot;</span> <span class="n">-IPRangeFilePath</span> <span class="s2">&quot;C:\temp\ExchangeIPs.txt&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-RestrictType</span> <span class="s2">"EWSBackend"</span> <span class="n">-IPRangeFilePath</span> <span class="s2">"C:\temp\ExchangeIPs.txt"</span>
 </code></pre></div>
 <p>This syntax will verify the IP restrictions for the EWS Backend virtual directory.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ValidateType</span> <span class="s2">&quot;RestrictTypeEWSBackend&quot;</span> <span class="n">-IPRangeFilePath</span> <span class="s2">&quot;C:\temp\ExchangeIPs.txt&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ValidateType</span> <span class="s2">"RestrictTypeEWSBackend"</span> <span class="n">-IPRangeFilePath</span> <span class="s2">"C:\temp\ExchangeIPs.txt"</span>
 </code></pre></div>
 <p>This syntax rolls back the Extended Protection configuration for all the Exchange Servers that are online where Extended Protection was previously configured.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-RollbackType</span> <span class="s2">&quot;RestoreConfiguration&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-RollbackType</span> <span class="s2">"RestoreConfiguration"</span>
 </code></pre></div>
 <p>This syntax rolls back the Extended Protection configuration for all the Exchange Servers that are online where Extended Protection was previously configured.</p>
 <div class="admonition warning">
@@ -5670,10 +5598,10 @@ servers being enabled.</p>
 <p class="admonition-title">NOTE</p>
 <p>This is a legacy version of the restore process and is no longer supported. You can still attempt to restore, if the configuration file is detected and is less than 30 days old if a configuration was done with a pervious version of the script. Moving forward, the applicationHost.config file is no longer being used as a backup to restore from. The <code>RestoreConfiguration</code> is the supported replacement.</p>
 </div>
-<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-RollbackType</span> <span class="s2">&quot;RestoreIISAppConfig&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-RollbackType</span> <span class="s2">"RestoreIISAppConfig"</span>
 </code></pre></div>
 <p>This syntax rolls back the Extended Protection mitigation of IP restriction for the EWS Backend virtual directory of all the Exchange Server that are online where Extended Protection was previously configured.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-RollbackType</span> <span class="s2">&quot;RestrictTypeEWSBackend&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-RollbackType</span> <span class="s2">"RestrictTypeEWSBackend"</span>
 </code></pre></div>
 <p>This syntax displays the current Extended Protection configuration for all the Exchange Servers that are online.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">.\</span><span class="n">ExchangeExtendedProtectionManagement</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-ShowExtendedProtection</span>

@@ -4665,8 +4665,6 @@
       
         
       
-        
-      
     
     
     
@@ -4730,106 +4728,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../Security/CVE-2023-23397/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CVE-2023-23397
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_13_2" id="__nav_13_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    CVE-2023-23397
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Security/CVE-2023-23397/FAQ/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5451,6 +5349,8 @@
       
         
       
+        
+      
     
     
     
@@ -5534,6 +5434,34 @@
     
   
     Get-AllMessageTraceResults
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transport/Get-TerrlExternalRecipientEstimate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get-TerrlExternalRecipientEstimate
   
 
     
@@ -5867,7 +5795,7 @@
 <div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">ManagePublicFolderPermissions</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-Export</span> <span class="o">-File</span> <span class="n">PFPerms</span><span class="p">.</span><span class="n">csv</span>
 </code></pre></div>
 <p>Export a specific subtree:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-PublicFolder</span> <span class="n">-Identity</span> <span class="s2">&quot;\Finance&quot;</span> <span class="n">-Recurse</span> <span class="n">-ResultSize</span> <span class="n">Unlimited</span> <span class="p">|</span>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-PublicFolder</span> <span class="n">-Identity</span> <span class="s2">"\Finance"</span> <span class="n">-Recurse</span> <span class="n">-ResultSize</span> <span class="n">Unlimited</span> <span class="p">|</span>
     <span class="p">.\</span><span class="n">ManagePublicFolderPermissions</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-Export</span> <span class="o">-File</span> <span class="n">PFPerms</span><span class="p">.</span><span class="n">csv</span>
 </code></pre></div>
 <p>Import permissions from CSV (do not overwrite existing matching entries):</p>

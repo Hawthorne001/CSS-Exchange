@@ -4543,8 +4543,6 @@
       
         
       
-        
-      
     
     
     
@@ -4608,106 +4606,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../Security/CVE-2023-23397/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CVE-2023-23397
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_13_2" id="__nav_13_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    CVE-2023-23397
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Security/CVE-2023-23397/FAQ/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5329,6 +5227,8 @@
       
         
       
+        
+      
     
     
     
@@ -5412,6 +5312,34 @@
     
   
     Get-AllMessageTraceResults
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transport/Get-TerrlExternalRecipientEstimate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get-TerrlExternalRecipientEstimate
   
 
     
@@ -5629,25 +5557,25 @@
 </table>
 <h2 id="examples">Examples</h2>
 <p>This is an example of how to run a basic query again a single item.</p>
-<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity han@solo.com -ItemSubject &quot;Test Message&quot;
+<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity han@solo.com -ItemSubject "Test Message"
 </code></pre></div>
 <p>This is an example of how to run the script when you want to query multiple items with a similar subject name.</p>
-<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity &quot;Zelda01&quot; -ItemSubject &quot;Initial Indexing&quot; -MatchSubjectSubstring
+<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity "Zelda01" -ItemSubject "Initial Indexing" -MatchSubjectSubstring
 </code></pre></div>
 <p>This is an example of how to run the script against an Archive Mailbox.</p>
-<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity han@solo.com -ItemSubject &quot;Test Message&quot; -IsArchive
+<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity han@solo.com -ItemSubject "Test Message" -IsArchive
 </code></pre></div>
 <p>This is an example of how to run the script against a Public Folder Mailbox</p>
-<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity PFMailbox2 -ItemSubject &quot;My Item Test&quot; -IsPublicFolder
+<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity PFMailbox2 -ItemSubject "My Item Test" -IsPublicFolder
 </code></pre></div>
 <p>This is an example of how to run the script to get all the index state categories</p>
-<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity &quot;Zelda02&quot; -Category &quot;All&quot;
+<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity "Zelda02" -Category "All"
 </code></pre></div>
 <p>This is an example of how to run the script to get all the non indexed items</p>
-<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity &quot;Zelda02&quot; -Category &quot;NotIndexed&quot;
+<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -MailboxIdentity "Zelda02" -Category "NotIndexed"
 </code></pre></div>
 <p>This is an example of how to run the script to get all the active mailboxes on a server</p>
-<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -Server &quot;Solo-E19A&quot;
+<div class="highlight"><pre><span></span><code>.\Troubleshoot-ModernSearch.ps1 -Server "Solo-E19A"
 </code></pre></div>
 
 

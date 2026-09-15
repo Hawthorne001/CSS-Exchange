@@ -4598,8 +4598,6 @@
       
         
       
-        
-      
     
     
     
@@ -4663,106 +4661,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../Security/CVE-2023-23397/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    CVE-2023-23397
-  
-
-    
-  </span>
-  
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_13_2" id="__nav_13_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_13_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_13_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    CVE-2023-23397
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Security/CVE-2023-23397/FAQ/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -5384,6 +5282,8 @@
       
         
       
+        
+      
     
     
     
@@ -5467,6 +5367,34 @@
     
   
     Get-AllMessageTraceResults
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Transport/Get-TerrlExternalRecipientEstimate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get-TerrlExternalRecipientEstimate
   
 
     
@@ -5697,7 +5625,7 @@ the remaining folders are ones that are experiencing permanent failures.</p>
 <h2 id="usage">Usage</h2>
 <p>First, generate your input file to tell the script which folders to export.
 This can be the entire hierarchy or a subset:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-PublicFolder</span> <span class="s2">&quot;\Some\Folder&quot;</span> <span class="n">-Recurse</span> <span class="n">-ResultSize</span> <span class="n">Unlimited</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">PublicFoldersToExport</span><span class="p">.</span><span class="n">csv</span>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-PublicFolder</span> <span class="s2">"\Some\Folder"</span> <span class="n">-Recurse</span> <span class="n">-ResultSize</span> <span class="n">Unlimited</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">PublicFoldersToExport</span><span class="p">.</span><span class="n">csv</span>
 </code></pre></div>
 <p>Provide that file to the script. This is how it will determine the difference
 between what it needs to export and what is already exported.</p>
